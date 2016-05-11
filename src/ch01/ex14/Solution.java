@@ -94,6 +94,7 @@ public class Solution {
         String[] numberStrArr = inputStringLines.split("\\s+");
         int N = (int)Math.sqrt(numberStrArr.length);
 
+        // I wanted to throw some error. I know the exception type is not perfect.
         if (numberStrArr.length % N != 0)
             throw new ArrayIndexOutOfBoundsException("Array not a perfect square");
 
