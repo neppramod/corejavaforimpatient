@@ -93,6 +93,10 @@ public class Solution {
         */
         String[] numberStrArr = inputStringLines.split("\\s+");
         int N = (int)Math.sqrt(numberStrArr.length);
+
+        if (numberStrArr.length % N != 0)
+            throw new ArrayIndexOutOfBoundsException("Array not a perfect square");
+
         int numbers3[][] = new int[N][N];
         int k = 0;
         for (int i = 0; i < N; i++) {
