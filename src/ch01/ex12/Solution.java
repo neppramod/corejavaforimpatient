@@ -1,13 +1,20 @@
 package ch01.ex12;
 
 /**
- * Rewriting invoke java/lang/invoke/Invokers:
+ *
+ * 12.	The	Java	Development	Kit	includes	a	file	src.zip	with	the	source	code	of	the
+ * Java	library.	Unzip	and,	with	your	favorite	text	search	tool,	find	usages	of	the
+ * labeled	break	and	continue	sequences.	Take	one	and	rewrite	it	without	a	labeled
+ * statement.
+ *
+ *
+ * Rewriting java/lang/invoke/Invokers:
  *
  * static MemberName methodHandleInvokeLinkerMethod(String name,
                                                      MethodType mtype,
                                                      Object[] appendixResult).
 
- Simplyfying return type with String and parameters as string where they are local type
+ Simplyfying return type and parameters with String also where they are local type
  E.g. MethodType
 
  if/else can be used to simulate switch and break.
